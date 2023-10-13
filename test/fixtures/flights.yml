@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flight_number: MyString
+  lookup_status: MyString
+  number_of_legs: 1
+  first_leg_departure_airport_iata: MyString
+  last_leg_arrival_airport_iata: MyString
+  distance_in_kilometers: 1.5
+  departure_iata: MyString
+  departure_city: MyString
+  departure_country: MyString
+  departure_latitude: 1.5
+  departure_longitude: 1.5
+  arrival_iata: MyString
+  arrival_city: MyString
+  arrival_country: MyString
+
+two:
+  flight_number: MyString
+  lookup_status: MyString
+  number_of_legs: 1
+  first_leg_departure_airport_iata: MyString
+  last_leg_arrival_airport_iata: MyString
+  distance_in_kilometers: 1.5
+  departure_iata: MyString
+  departure_city: MyString
+  departure_country: MyString
+  departure_latitude: 1.5
+  departure_longitude: 1.5
+  arrival_iata: MyString
+  arrival_city: MyString
+  arrival_country: MyString
