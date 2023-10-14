@@ -1,14 +1,14 @@
 class FlightInfoController < ApplicationController
   def get_flight_info
     flight_number = params[:flight_num]
-
-    unless valid_flight_number?(flight_number)
+    flight = Flight.new(flight_number: flight_number)
+    unless flight.valid?
       render json: {
         route: nil,
         status: "FAIL",
         distance: 0,
         error_message: "Invalid flight number format"
-      }
+      }, status: :bad_request
       return
     end
 
@@ -50,7 +50,7 @@ class FlightInfoController < ApplicationController
           status: "FAIL",
           distance: 0,
           error_message: "Failed to retrieve flight information from API"
-        }
+        }, status: :bad_gateway
       end
     end
   end
@@ -100,15 +100,6 @@ class FlightInfoController < ApplicationController
       distance: 0,
       error_message: "Failed to retrieve flight information from FlightAware API"
     }
-  end
-
-  def valid_flight_number?(flight_number)
-    return false unless [6, 7].include?(flight_number.length)
-    carrier_code = flight_number[0, 3]
-    number = flight_number[3, 4]
-    return false unless /^[A-Z0-9]+$/.match?(carrier_code)
-    return false unless /^\d+$/.match?(number)
-    true
   end
 
   def get_airport_coordinates(place_info)
