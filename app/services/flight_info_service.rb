@@ -1,4 +1,3 @@
-# app/services/flight_info_service.rb
 class FlightInfoService
   def initialize(api_key)
     @api_key = api_key

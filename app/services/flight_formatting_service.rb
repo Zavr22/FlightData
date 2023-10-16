@@ -1,4 +1,3 @@
-# app/services/flight_formatting_service.rb
 class FlightFormattingService
   def format_flight_info(departure_data, arrival_data, flight_data)
     {
