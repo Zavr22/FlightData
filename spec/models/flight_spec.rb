@@ -29,7 +29,7 @@ RSpec.describe Flight, type: :model do
   it "converts and validates flight number format" do
     flight = Flight.new(flight_number: "aBc123")
     flight.valid?
-    expect(flight.flight_number).to eq("ABC1230")
+    expect(flight.flight_number).to eq("ABC0123")
   end
 
   it "validates presence of flight number" do

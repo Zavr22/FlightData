@@ -10,7 +10,7 @@ class Flight < ApplicationRecord
       zzzz = flight_number.gsub(/\D/, "")
       puts zzzz
       if zzzz.length < 4
-        padded_zzzz = zzzz.ljust(4, "0")
+        padded_zzzz = zzzz.rjust(4, "0")
         puts padded_zzzz
         puts flight_number.gsub(/[^A-Za-z]/, "").upcase
         puts flight_number.gsub(/[^A-Za-z]/, "").upcase + padded_zzzz
