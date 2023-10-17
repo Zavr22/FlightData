@@ -45,13 +45,18 @@ class FlightInfoService
   end
 
   def save_flight_info(flight_data, departure_coordinates, arrival_coordinates)
+    distance_in_kilometers = if flight_data["route_distance"]
+      flight_data["route_distance"] * 1.60934
+    else
+      0
+    end
     Flight.create(
       flight_number: flight_data["ident"],
       lookup_status: "OK",
       number_of_legs: 1,
       first_leg_departure_airport_iata: departure_coordinates["code_iata"],
       last_leg_arrival_airport_iata: arrival_coordinates["code_iata"],
-      distance_in_kilometers: flight_data["route_distance"],
+      distance_in_kilometers: distance_in_kilometers,
       departure_iata: departure_coordinates["code_iata"],
       departure_city: departure_coordinates["city"],
       departure_country: flight_data["origin"]["country"],

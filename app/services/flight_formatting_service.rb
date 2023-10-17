@@ -18,7 +18,7 @@ class FlightFormattingService
         }
       },
       status: "OK",
-      distance: flight_data["route_distance"],
+      distance: flight_data["route_distance"] * 1.60934,
       error_message: nil
     }
   end

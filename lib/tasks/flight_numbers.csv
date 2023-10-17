@@ -1,251 +1,51 @@
 Example flight number,Flight number used for lookup,Lookup status,Number of legs,First leg departure airport IATA,Last leg arrival airport IATA,Distance in kilometers
-ENT4766,ENT4766,OK,2,AYT,SZZ,1382
-FR9663,FR9663,"FAIL, no such flights",,,,0
-BA812,BA812,"FAIL, no such flights",,,,0
-LO3923,LO3923,"FAIL, no such flights",,,,0
-FR4396,FR4396,"FAIL, no such flights",,,,0
-FR6085,FR6085,"FAIL, no such flights",,,,0
-FR4689,FR4689,"FAIL, no such flights",,,,0
-FR1901,FR1901,"FAIL, no such flights",,,,0
-LH406,LH406,"FAIL, no such flights",,,,0
-WF666,WF666,"FAIL, no such flights",,,,0
-FR6085,FR6085,"FAIL, no such flights",,,,0
-FR1006,FR1006,OK,2,OTP,STN,1286
-KL0781,KL0781,"FAIL, no such flights",,,,0
-W61368,W61368,"FAIL, no such flights",,,,0
-W61340,W61340,"FAIL, no such flights",,,,0
-FR1006,FR1006,"FAIL, no such flights",,,,0
-FR2169,FR2169,"FAIL, no such flights",,,,0
-AF0257,AF0257,"FAIL, no such flights",,,,0
-FR6215,FR6215,"FAIL, no such flights",,,,0
-FR7150,FR7150,"FAIL, no such flights",,,,0
-DK1555,DK1555,"FAIL, no such flights",,,,0
-MH0852,MH0852,"FAIL, no such flights",,,,0
-FR1641,FR1641,"FAIL, no such flights",,,,0
-LH840,LH840,"FAIL, no such flights",,,,0
-W61332,W61332,"FAIL, no such flights",,,,0
-FR2466,FR2466,"FAIL, no such flights",,,,0
-W61332,W61332,"FAIL, no such flights",,,,0
-W61368,W61368,"FAIL, no such flights",,,,0
-FR4689,FR4689,"FAIL, no such flights",,,,0
-LO004,LO004,"FAIL, no such flights",,,,0
-DK1555,DK1555,"FAIL, no such flights",,,,0
-DK1555,DK1555,"FAIL, no such flights",,,,0
-UU972,UU972,"FAIL, no such flights",,,,0
-FR7606,FR7606,"FAIL, no such flights",,,,0
-W61332,W61332,"FAIL, no such flights",,,,0
-W61284,W61284,"FAIL, no such flights",,,,0
-FT1503,FT1503,"FAIL, no such flights",,,,0
-FR2650,FR2650,"FAIL, no such flights",,,,0
-W65042,W65042,"FAIL, no such flights",,,,0
-TK0084,TK0084,"FAIL, no such flights",,,,0
-AY0121,AY0121,"FAIL, no such flights",,,,0
-W65042,W65042,"FAIL, no such flights",,,,0
-FR2812,FR2812,"FAIL, no such flights",,,,0
-VY6229,VY6229,"FAIL, no such flights",,,,0
-FR5892,FR5892,"FAIL, no such flights",,,,0
-TVP7313,TVP7313,"FAIL, no such flights",,,,0
-W62405,W62405,"FAIL, no such flights",,,,0
-LAOI6W,LAOI6W,invalid flight number,,,,0
-LH2420,LH2420,"FAIL, no such flights",,,,0
-FR4106,FR4106,"FAIL, no such flights",,,,0
-W65004,W65004,"FAIL, no such flights",,,,0
-W91902,W91902,"FAIL, no such flights",,,,0
-FR2618,FR2618,"FAIL, no such flights",,,,0
-W95178,W95178,"FAIL, no such flights",,,,0
-VY8015,VY8015,"FAIL, no such flights",,,,0
-W61381,W61381,"FAIL, no such flights",,,,0
-W91902,W91902,"FAIL, no such flights",,,,0
-W91901,W91901,"FAIL, no such flights",,,,0
-SK222,SK222,"FAIL, no such flights",,,,0
-HHJ9YD,HHJ9YD,invalid flight number,,,,0
-W61302,W61302,"FAIL, no such flights",,,,0
-NGLNCY,NGLNCY,invalid flight number,,,,0
-TP202,TP202,"FAIL, no such flights",,,,0
-W91902,W91902,"FAIL, no such flights",,,,0
-W65004,W65004,"FAIL, no such flights",,,,0
-W65042,W65042,"FAIL, no such flights",,,,0
-W61381,W61381,"FAIL, no such flights",,,,0
-W61381,W61381,"FAIL, no such flights",,,,0
-LH14,LH14,"FAIL, no such flights",,,,0
-FR5893,FR5893,"FAIL, no such flights",,,,0
-AF422,AF422,"FAIL, no such flights",,,,0
-VY7821,VY7821,"FAIL, no such flights",,,,0
-LNINXW,LNINXW,invalid flight number,,,,0
-W92066 LTN-LUZ,W92066,"FAIL, no such flights",,,,0
-W92066,W92066,"FAIL, no such flights",,,,0
-W65048,W65048,"FAIL, no such flights",,,,0
-W61338,W61338,"FAIL, no such flights",,,,0
-W61311,W61311,"FAIL, no such flights",,,,0
-LX087,LX087,"FAIL, no such flights",,,,0
-IB3441,IB3441,OK,2,ORY,MAD,639
-XBM5UV,XBM5UV,invalid flight number,,,,0
-EWN4063,EWN4063,"FAIL, no such flights",,,,0
-W65048,W65048,"FAIL, no such flights",,,,0
-SN3182,SN3182,"FAIL, no such flights",,,,0
-W61006,W61006,"FAIL, no such flights",,,,0
-SK0187,SK0187,"FAIL, no such flights",,,,0
-FR8922,FR8922,"FAIL, no such flights",,,,0
-W61002,W61002,"FAIL, no such flights",,,,0
-BLX371,BLX371,"FAIL, no such flights",,,,0
-FR3366,FR3366,"FAIL, no such flights",,,,0
-AY1983,AY1983,"FAIL, no such flights",,,,0
-FR570,FR570,"FAIL, no such flights",,,,0
-TF340,TF340,"FAIL, no such flights",,,,0
-W64048,W64048,"FAIL, no such flights",,,,0
-BA0846,BA0846,"FAIL, no such flights",,,,0
-W61488,W61488,"FAIL, no such flights",,,,0
-FR9095,FR9095,"FAIL, no such flights",,,,0
-AF1750,AF1750,"FAIL, no such flights",,,,0
-VY3913,VY3913,"FAIL, no such flights",,,,0
-AF1422,AF1422,"FAIL, no such flights",,,,0
-WF7761,WF7761,"FAIL, no such flights",,,,0
-SK2645,SK2645,"FAIL, no such flights",,,,0
-W61354,W61354,"FAIL, no such flights",,,,0
-W61312,W61312,"FAIL, no such flights",,,,0
-FR2370,FR2370,"FAIL, no such flights",,,,0
-LH2511,LH2511,"FAIL, no such flights",,,,0
-W61312,W61312,"FAIL, no such flights",,,,0
-W61308,W61308,"FAIL, no such flights",,,,0
-W65072,W65072,"FAIL, no such flights",,,,0
-TG961 - B,TG961,"FAIL, no such flights",,,,0
-TKCU9K,TKCU9K,invalid flight number,,,,0
-FR4626,FR4626,"FAIL, no such flights",,,,0
-JU123,JU123,"FAIL, no such flights",,,,0
-FR6252,FR6252,"FAIL, no such flights",,,,0
-W98130,W98130,"FAIL, no such flights",,,,0
-FR4702,FR4702,"FAIL, no such flights",,,,0
-SQ317,SQ317,"FAIL, no such flights",,,,0
-JU123,JU123,"FAIL, no such flights",,,,0
-AY487,AY487,"FAIL, no such flights",,,,0
-W61340,W61340,"FAIL, no such flights",,,,0
-AF1147,AF1147,"FAIL, no such flights",,,,0
-FR4617,FR4617,"FAIL, no such flights",,,,0
-LO3922,LO3922,"FAIL, no such flights",,,,0
-LO3922,LO3922,"FAIL, no such flights",,,,0
-FR6392,FR6392,"FAIL, no such flights",,,,0
-OS236,OS236,"FAIL, no such flights",,,,0
-FR2013,FR2013,"FAIL, no such flights",,,,0
-WF622,WF622,"FAIL, no such flights",,,,0
-AF1062,AF1062,"FAIL, no such flights",,,,0
-SK0020,SK0020,"FAIL, no such flights",,,,0
-FR6257,FR6257,"FAIL, no such flights",,,,0
-W61002,W61002,"FAIL, no such flights",,,,0
-W61381,W61381,"FAIL, no such flights",,,,0
-W61072,W61072,"FAIL, no such flights",,,,0
-W61540,W61540,"FAIL, no such flights",,,,0
-W61332,W61332,"FAIL, no such flights",,,,0
-DY1784,DY1784,"FAIL, no such flights",,,,0
-BLX730,BLX730,"FAIL, no such flights",,,,0
-W61312,W61312,"FAIL, no such flights",,,,0
-WF0532,WF0532,"FAIL, no such flights",,,,0
-DK2582,DK2582,"FAIL, no such flights",,,,0
-W61340,W61340,"FAIL, no such flights",,,,0
-W61311,W61311,"FAIL, no such flights",,,,0
-W61340,W61340,"FAIL, no such flights",,,,0
-8478,8478,invalid flight number,,,,0
-W61598,W61598,"FAIL, no such flights",,,,0
-SK2112,SK2112,"FAIL, no such flights",,,,0
-W61598,W61598,"FAIL, no such flights",,,,0
-W61382,W61382,"FAIL, no such flights",,,,0
-SEQNO 068,SEQNO,invalid flight number,,,,0
-LO3986,LO3986,"FAIL, no such flights",,,,0
-FR239,FR239,OK,2,CIG,MXP,442
-FR1141,FR1141,"FAIL, no such flights",,,,0
-FD9CVP,FD9CVP,invalid flight number,,,,0
-FR6151,FR6151,OK,2,GOT,,529
-5042,5042,invalid flight number,,,,0
-W61354,W61354,"FAIL, no such flights",,,,0
-FR9276;,FR9276;,invalid flight number,,,,0
-W61540,W61540,"FAIL, no such flights",,,,0
-W65042,W65042,"FAIL, no such flights",,,,0
-ET879,ET879,"FAIL, no such flights",,,,0
-FR7855,FR7855,"FAIL, no such flights",,,,0
-FR7603,FR7603,"FAIL, no such flights",,,,0
-FR3278,FR3278,"FAIL, no such flights",,,,0
-FR7931,FR7931,"FAIL, no such flights",,,,0
-WF0784,WF0784,"FAIL, no such flights",,,,0
-W61382,W61382,"FAIL, no such flights",,,,0
-SN2641,SN2641,"FAIL, no such flights",,,,0
-W65042,W65042,"FAIL, no such flights",,,,0
-W65041,W65041,"FAIL, no such flights",,,,0
-AC883,AC883,"FAIL, no such flights",,,,0
-BA570,BA570,"FAIL, no such flights",,,,0
-BLX371,BLX371,"FAIL, no such flights",,,,0
-AY5526,AY5526,"FAIL, no such flights",,,,0
-AY5526,AY5526,"FAIL, no such flights",,,,0
-W1276,W1276,invalid flight number,,,,0
-FR2025,FR2025,"FAIL, no such flights",,,,0
-FR5892,FR5892,"FAIL, no such flights",,,,0
-SK171,SK171,"FAIL, no such flights",,,,0
-DK1555,DK1555,"FAIL, no such flights",,,,0
-D84035,D84035,"FAIL, no such flights",,,,0
-LH805,LH805,"FAIL, no such flights",,,,0
-V5WU7V,V5WU7V,invalid flight number,,,,0
-KL1556,KL1556,"FAIL, no such flights",,,,0
-W61304,W61304,"FAIL, no such flights",,,,0
-FR8405,FR8405,"FAIL, no such flights",,,,0
-SK0105,SK0105,"FAIL, no such flights",,,,0
-W61682,W61682,"FAIL, no such flights",,,,0
-TVP7313,TVP7313,"FAIL, no such flights",,,,0
-VY3006 VY1266,VY3006,"FAIL, no such flights",,,,0
-"LH1829, LH1624","LH1829,",invalid flight number,,,,0
-TK1882,TK1882,"FAIL, no such flights",,,,0
-W65034,W65034,"FAIL, no such flights",,,,0
-BA0781,BA0781,"FAIL, no such flights",,,,0
-TP1908,TP1908,"FAIL, no such flights",,,,0
-FR5173,FR5173,"FAIL, no such flights",,,,0
-W65004,W65004,"FAIL, no such flights",,,,0
-W65033,W65033,"FAIL, no such flights",,,,0
-BA780,BA780,"FAIL, no such flights",,,,0
-W61784,W61784,"FAIL, no such flights",,,,0
-W61354,W61354,"FAIL, no such flights",,,,0
-W65034,W65034,"FAIL, no such flights",,,,0
-ET1602,ET1602,"FAIL, no such flights",,,,0
-DL143,DL143,"FAIL, no such flights",,,,0
-LX967,LX967,"FAIL, no such flights",,,,0
-TP1334,TP1334,"FAIL, no such flights",,,,0
-TG0925,TG0925,"FAIL, no such flights",,,,0
-LH979,LH979,"FAIL, no such flights",,,,0
-RK135V,RK135V,"FAIL, no such flights",,,,0
-SK7472,SK7472,"FAIL, no such flights",,,,0
-JTD770,JTD770,"FAIL, no such flights",,,,0
-FR8251,FR8251,"FAIL, no such flights",,,,0
-W61662,W61662,"FAIL, no such flights",,,,0
-LH1692,LH1692,"FAIL, no such flights",,,,0
-W61094,W61094,"FAIL, no such flights",,,,0
-LH1396,LH1396,"FAIL, no such flights",,,,0
-LH842,LH842,"FAIL, no such flights",,,,0
-W65034,W65034,"FAIL, no such flights",,,,0
-AF1823,AF1823,"FAIL, no such flights",,,,0
-TP788,TP788,"FAIL, no such flights",,,,0
-W65034,W65034,"FAIL, no such flights",,,,0
-LH1689,LH1689,"FAIL, no such flights",,,,0
-KL6151,KL6151,"FAIL, no such flights",,,,0
-SK0268,SK0268,"FAIL, no such flights",,,,0
-BA778,BA778,"FAIL, no such flights",,,,0
-KL590,KL590,"FAIL, no such flights",,,,0
-LO4,LO4,"FAIL, no such flights",,,,0
-VLNUVH,VLNUVH,invalid flight number,,,,0
-AF1823,AF1823,"FAIL, no such flights",,,,0
-W61029,W61029,"FAIL, no such flights",,,,0
-FR4412,FR4412,"FAIL, no such flights",,,,0
-W95126,W95126,"FAIL, no such flights",,,,0
-LBBIJF,LBBIJF,invalid flight number,,,,0
-W61608,W61608,"FAIL, no such flights",,,,0
-FR8201,FR8201,"FAIL, no such flights",,,,0
-FR9881,FR9881,"FAIL, no such flights",,,,0
-LH164,LH164,OK,2,FRA,LEJ,188
-LH2519 LH1624,LH2519,"FAIL, no such flights",,,,0
-W61594,W61594,"FAIL, no such flights",,,,0
-AY1578,AY1578,"FAIL, no such flights",,,,0
-FR3364,FR3364,"FAIL, no such flights",,,,0
-FR1881,FR1881,"FAIL, no such flights",,,,0
-W61382,W61382,"FAIL, no such flights",,,,0
-SK1455,SK1455,"FAIL, no such flights",,,,0
-LO027,LO027,"FAIL, no such flights",,,,0
-DY140,DY140,"FAIL, no such flights",,,,0
-W61515,W61515,"FAIL, no such flights",,,,0
-FR1932,FR1932,"FAIL, no such flights",,,,0
-W61382,W61382,"FAIL, no such flights",,,,0
-DY140,DY140,"FAIL, no such flights",,,,0
+ENT4766,ENT4766,FAIL,,,,
+FR9663,FR9663,FAIL,,,,
+BA812,BA0812,FAIL,,,,
+LO3923,LO3923,OK,2,WAW,KRK,534.31
+FR4396,FR4396,OK,2,ARN,MMX,1045.49
+FR6085,FR6085,FAIL,,,,
+FR4689,FR4689,OK,2,ALC,ARN,5379.83
+FR1901,FR1901,OK,2,DUB,KRK,3700.3
+LH406,LH0406,FAIL,,,,
+WF666,WF0666,FAIL,,,,
+FR6085,FR6085,FAIL,,,,
+FR1006,FR1006,OK,2,OTP,STN,4198.36
+KL0781,KL0781,FAIL,,,,
+W61368,W61368,OK,2,CPH,WAW,1360.56
+W61340,W61340,OK,2,BRI,WAW,2518.6
+FR1006,FR1006,OK,2,OTP,STN,4198.36
+FR2169,FR2169,OK,2,VLL,PMI,1355.06
+AF0257,AF0257,FAIL,,,,
+FR6215,FR6215,FAIL,,,,
+FR7150,FR7150,FAIL,,,,
+DK1555,DK1555,FAIL,,,,
+MH0852,MH0852,FAIL,,,,
+FR1641,FR1641,FAIL,,,,
+LH840,LH8400,OK,2,FRA,PVG,17800.7
+W61332,W61332,FAIL,,,,
+FR2466,FR2466,OK,2,STN,SZZ,2026.16
+W61332,W61332,FAIL,,,,
+W61368,W61368,OK,2,CPH,WAW,1360.56
+FR4689,FR4689,OK,2,ALC,ARN,5379.83
+LO004,LO0004,FAIL,,,,
+DK1555,DK1555,FAIL,,,,
+DK1555,DK1555,FAIL,,,,
+UU972,UU0972,FAIL,,,,
+FR7606,FR7606,FAIL,,,,
+W61332,W61332,FAIL,,,,
+W61284,W61284,OK,2,TLV,KTW,4857.49
+FT1503,FT1503,FAIL,,,,
+FR2650,FR2650,FAIL,,,,
+W65042,W65042,FAIL,,,,
+TK0084,TK0084,FAIL,,,,
+AY0121,AY0121,FAIL,,,,
+W65042,W65042,FAIL,,,,
+FR2812,FR2812,FAIL,,,,
+VY6229,VY6229,OK,2,LGW,FCO,2742.7
+FR5892,FR5892,OK,2,KRK,EIN,2128.66
+LH2420,LH2420,OK,2,MUC,ARN,2654.49
+FR4106,FR4106,OK,2,GDN,WRO,798.76
+W65004,W65004,FAIL,,,,
+W91902,W91902,OK,2,LTN,POZ,2340.61
+FR2618,FR2618,OK,2,STN,CPH,1818.06
