@@ -40,6 +40,11 @@ task csv: :environment do
         if flight_data
           if flight_data[:status] == "FAIL" && retries < max_retries
             retries += 1
+            if retries >= max_retries
+              row["Lookup status"] = "FAIL (max retries exceeded)"
+              row["Distance in kilometers"] = 0
+              updated_rows << row
+            end
           else
             if flight_data[:status] != "OK"
               row["Lookup status"] = "FAIL"

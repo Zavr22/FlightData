@@ -1,5 +1,5 @@
 class FlightFormattingService
-  def format_flight_info(departure_data, arrival_data, flight_data)
+  def format_flight_info(departure_data, arrival_data, distance_in_kilometers)
     {
       route: {
         departure: {
@@ -18,7 +18,7 @@ class FlightFormattingService
         }
       },
       status: "OK",
-      distance: flight_data["route_distance"] * 1.60934,
+      distance: distance_in_kilometers,
       error_message: nil
     }
   end
