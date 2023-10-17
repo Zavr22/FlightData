@@ -12,6 +12,6 @@ RSpec.describe "import:csv" do
   end
 
   it "imports data from a CSV file" do
-    expect { Rake::Task["import:csv"].invoke }.not_to raise_error
+    expect { Rake::Task["csv"].invoke }.not_to raise_error
   end
 end
