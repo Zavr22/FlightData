@@ -113,8 +113,7 @@ class FlightInfoService
       flights.map do |flight|
         departure_airport = Airport.find_by(code_iata: flight.first_leg_departure_airport_iata)
         arrival_airport = Airport.find_by(code_iata: flight.last_leg_arrival_airport_iata)
-        flight = @formatting_service.format_flight_info(departure_airport, arrival_airport, flight.distance_in_kilometers)
-        return @formatting_service.format_multi_leg_flight(flight)
+        return @formatting_service.format_multi_leg_flight(@formatting_service.format_flight_info(departure_airport, arrival_airport, flight.distance_in_kilometers))
       end
     else
       get_flights_by_airports_codes(airport_origin, airport_destination)
@@ -184,12 +183,12 @@ class FlightInfoService
     }
   end
 
-   def fetch_airport_data(airport_code)
-    response = HTTParty.get(URI("https://aeroapi.flightaware.com/aeroapi/airports/#{airport_code}"), headers: {"x-apikey" => @api_key})
-    if response
-      JSON.parse(response.body)
-    end
-  end
+  def fetch_airport_data(airport_code)
+   response = HTTParty.get(URI("https://aeroapi.flightaware.com/aeroapi/airports/#{airport_code}"), headers: {"x-apikey" => @api_key})
+   if response
+     JSON.parse(response.body)
+   end
+ end
 
   def create_or_update_airport(airport_code, airport_data)
     airport = Airport.find_or_initialize_by(code_iata: airport_code["code_iata"])

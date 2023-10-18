@@ -11,6 +11,7 @@ gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
+gem "vcr"
 
 gem 'dotenv-rails', groups: [:development, :test]
 
@@ -47,6 +48,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
   gem 'standard', require: false
   gem 'rspec-rails'
+  gem 'webmock'
 end
 
 group :development do

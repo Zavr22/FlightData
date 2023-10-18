@@ -147,26 +147,125 @@ RSpec.describe FlightInfoService do
   end
 
   describe "#get_airport_coordinates" do
-    it "returns not defined by API for an invalid airport code" do
-      airport_code = "INVALID"
-      allow(HTTParty).to receive(:get).and_return(double(success?: true, body: "..."))
+    context "when airport data is available in the database" do
+      it "returns airport coordinates from the database" do
+        airport_code = "DIA"
+        result = flight_info_service.get_airport_coordinates({ "code_iata" => airport_code })
 
-      result = flight_info_service.get_airport_coordinates(airport_code)
-
-      expect(result["code_iata"]).to eq("not defined by api")
-      expect(result["latitude"]).to eq(0.0)
-      expect(result["longitude"]).to eq(0.0)
+        expect(result["code_iata"]).to eq(airport_code)
+        expect(result["latitude"]).to eq(25.261125)
+        expect(result["longitude"]).to eq(51.565056)
+      end
     end
 
-    it "returns not defined by API for a non-IATA airport code" do
-      airport_code = "XYZ"
-      allow(HTTParty).to receive(:get).and_return(double(success?: true, body: "..."))
+    context "when airport data is not available in the database" do
+      it "fetches and creates airport data from the API" do
+        airport_code = "DIA"
+        response_data = { "code_iata" => airport_code, "latitude" => 25.0, "longitude" => 51.0 }
+        allow(Airport).to receive(:find_by).and_return(nil)
+        allow(flight_info_service).to receive(:fetch_airport_data).and_return(response_data)
 
-      result = flight_info_service.get_airport_coordinates(airport_code)
+        result = flight_info_service.get_airport_coordinates({ "code_iata" => airport_code })
 
-      expect(result["code_iata"]).to eq("not defined by api")
-      expect(result["latitude"]).to eq(0.0)
-      expect(result["longitude"]).to eq(0.0)
+        expect(result["code_iata"]).to eq(airport_code)
+        expect(result["latitude"]).to eq(25.0)
+        expect(result["longitude"]).to eq(51.0)
+      end
+    end
+
+    context "when airport data cannot be fetched from the API" do
+      it "returns default airport info" do
+        airport_code = "INVALID"
+        allow(Airport).to receive(:find_by).and_return(nil)
+        allow(flight_info_service).to receive(:fetch_airport_data).and_return(nil)
+
+        result = flight_info_service.get_airport_coordinates({ "code_iata" => airport_code })
+
+        expect(result["code_iata"]).to eq("not defined by API")
+        expect(result["latitude"]).to eq(0.0)
+        expect(result["longitude"]).to eq(0.0)
+      end
     end
   end
+
+
+  describe "#fetch_airport_data" do
+    it "fetches airport data from the API" do
+      airport_code = "DIA"
+      expected_url = "https://aeroapi.flightaware.com/aeroapi/airports/#{airport_code}"
+      response_data = { "name" => "Airport Name", "city" => "Airport City" }
+      allow(HTTParty).to receive(:get).with(URI(expected_url), headers: {"x-apikey" => api_key}).and_return(
+        double(success?: true, body: JSON.dump(response_data))
+      )
+
+      result = flight_info_service.fetch_airport_data(airport_code)
+
+      expect(result).to eq(response_data)
+    end
+  end
+
+  describe "#create_or_update_airport" do
+    it "creates or updates an airport in the database" do
+      airport_code = "DIA"
+      airport_data = {"name" => "Airport Name", "city" => "Airport City"}
+
+      result = flight_info_service.create_or_update_airport(airport_code, airport_data)
+
+      expect(result).to be_an(Airport)
+    end
+  end
+  describe "#get_flights_between_airports" do
+    context "when flights are available in the database" do
+      it "returns flights between two airports" do
+
+        result = flight_info_service.get_flights_between_airports("DIA", "BEY")
+
+        expect(result).to be_an(Array)
+        expect(result).not_to be_empty
+      end
+    end
+  end
+
+  describe "#get_flights_by_airports_codes" do
+    context "when flights are available in the API response" do
+      it "returns flights between two airports" do
+        iata_origin = "DIA"
+        iata_destination = "BEY"
+        response_data = {"flights" => [{ "ident" => "AA123", "route_distance" => 100.0}]}
+        allow(HTTParty).to receive(:get).and_return(double(success?: true, body: JSON.dump(response_data)))
+
+        result = flight_info_service.get_flights_by_airports_codes(iata_origin, iata_destination)
+
+        expect(result).to be_an(Array)
+      end
+    end
+
+    context "when no flights are available in the API response" do
+      it "returns a failure status" do
+        iata_origin = "DIA"
+        iata_destination = "BEY"
+        allow(HTTParty).to receive(:get).and_return(double(success?: true, body: JSON.dump("flights" => [])))
+
+        result = flight_info_service.get_flights_by_airports_codes(iata_origin, iata_destination)
+
+        expect(result[:status]).to eq("FAIL")
+      end
+
+      context "when the API request fails" do
+        it "returns a failure status" do
+          iata_origin = "DIA"
+          iata_destination = "BEY"
+          allow(HTTParty).to receive(:get).and_return(double(success?: false, body: ' "status" => "FAIL",
+            "error_message" => "Failed to retrieve flight information from FlightAware API",
+            "distance" => 0,
+            "route" => nil"'))
+
+          result = flight_info_service.get_flights_by_airports_codes(iata_origin, iata_destination)
+
+          expect(result[:status]).to eq("FAIL")
+        end
+      end
+    end
+  end
+
 end

@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/flights/MEA0503
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 09:03:35 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Fa-User:
+      - mishakulik27
+      X-Fa-Userid:
+      - '15732071'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Varnish:
+      - '1208479313'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Fa-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmbGlnaHRzIjpbeyJpZGVudCI6Ik1FQTUwMyIsImlkZW50X2ljYW8iOiJNRUE1MDMiLCJpZGVudF9pYXRhIjoiTUU1MDMiLCJmYV9mbGlnaHRfaWQiOiJNRUE1MDMtMTY5NzE4NzQzMi1kbGFkLTIwODBwIiwib3BlcmF0b3IiOiJNRUEiLCJvcGVyYXRvcl9pY2FvIjoiTUVBIiwib3BlcmF0b3JfaWF0YSI6Ik1FIiwiZmxpZ2h0X251bWJlciI6IjUwMyIsInJlZ2lzdHJhdGlvbiI6bnVsbCwiYXRjX2lkZW50IjpudWxsLCJpbmJvdW5kX2ZhX2ZsaWdodF9pZCI6bnVsbCwiY29kZXNoYXJlcyI6W10sImNvZGVzaGFyZXNfaWF0YSI6W10sImJsb2NrZWQiOmZhbHNlLCJkaXZlcnRlZCI6ZmFsc2UsImNhbmNlbGxlZCI6dHJ1ZSwicG9zaXRpb25fb25seSI6ZmFsc2UsIm9yaWdpbiI6eyJjb2RlIjoiT1RCRCIsImNvZGVfaWNhbyI6Ik9UQkQiLCJjb2RlX2lhdGEiOiJESUEiLCJjb2RlX2xpZCI6bnVsbCwidGltZXpvbmUiOiJBc2lhL1FhdGFyIiwibmFtZSI6ItCU0L7RhdCwIiwiY2l0eSI6IkRvaGEiLCJhaXJwb3J0X2luZm9fdXJsIjoiL2FpcnBvcnRzL09UQkQifSwiZGVzdGluYXRpb24iOnsiY29kZSI6Ik9MQkEiLCJjb2RlX2ljYW8iOiJPTEJBIiwiY29kZV9pYXRhIjoiQkVZIiwiY29kZV9saWQiOm51bGwsInRpbWV6b25lIjoiQXNpYS9CZWlydXQiLCJuYW1lIjoiQmVpcnV0IEFpciBCYXNlL1JhZmljIEhhcmlyaSBJbnQnbCAoQmVpcnV0IEludCdsKSIsImNpdHkiOiJCZWlydXQiLCJhaXJwb3J0X2luZm9fdXJsIjoiL2FpcnBvcnRzL09MQkEifSwiZGVwYXJ0dXJlX2RlbGF5IjowLCJhcnJpdmFsX2RlbGF5IjotMTY5NzQwODQ2MSwiZmlsZWRfZXRlIjoxMDI2MCwiZm9yZXNpZ2h0X3ByZWRpY3Rpb25zX2F2YWlsYWJsZSI6ZmFsc2UsInNjaGVkdWxlZF9vdXQiOiIyMDIzLTEwLTE1VDE5OjI1OjAwWiIsImVzdGltYXRlZF9vdXQiOiIyMDIzLTEwLTE1VDE5OjI1OjAwWiIsImFjdHVhbF9vdXQiOm51bGwsInNjaGVkdWxlZF9vZmYiOiIyMDIzLTEwLTE1VDE5OjMwOjAwWiIsImVzdGltYXRlZF9vZmYiOiIyMDIzLTEwLTE1VDE5OjMwOjAwWiIsImFjdHVhbF9vZmYiOm51bGwsInNjaGVkdWxlZF9vbiI6IjIwMjMtMTAtMTVUMjI6MjE6MDBaIiwiZXN0aW1hdGVkX29uIjpudWxsLCJhY3R1YWxfb24iOm51bGwsInNjaGVkdWxlZF9pbiI6bnVsbCwiZXN0aW1hdGVkX2luIjpudWxsLCJhY3R1YWxfaW4iOm51bGwsInByb2dyZXNzX3BlcmNlbnQiOjEwMCwic3RhdHVzIjoi0L3QtdC40LfQstC10YHRgtC90L4iLCJhaXJjcmFmdF90eXBlIjoiRTU1MCIsInJvdXRlX2Rpc3RhbmNlIjoxMTMyLCJmaWxlZF9haXJzcGVlZCI6NDc0LCJmaWxlZF9hbHRpdHVkZSI6NDEwLCJyb3V0ZSI6bnVsbCwiYmFnZ2FnZV9jbGFpbSI6bnVsbCwic2VhdHNfY2FiaW5fYnVzaW5lc3MiOm51bGwsInNlYXRzX2NhYmluX2NvYWNoIjpudWxsLCJzZWF0c19jYWJpbl9maXJzdCI6bnVsbCwiZ2F0ZV9vcmlnaW4iOm51bGwsImdhdGVfZGVzdGluYXRpb24iOm51bGwsInRlcm1pbmFsX29yaWdpbiI6bnVsbCwidGVybWluYWxfZGVzdGluYXRpb24iOm51bGwsInR5cGUiOiJBaXJsaW5lIn0seyJpZGVudCI6Ik1FQTUwMyIsImlkZW50X2ljYW8iOiJNRUE1MDMiLCJpZGVudF9pYXRhIjoiTUU1MDMiLCJmYV9mbGlnaHRfaWQiOiJNRUE1MDMtMTY5NzM2NzA0MS1kbGFkLTE1NTNwIiwib3BlcmF0b3IiOiJNRUEiLCJvcGVyYXRvcl9pY2FvIjoiTUVBIiwib3BlcmF0b3JfaWF0YSI6Ik1FIiwiZmxpZ2h0X251bWJlciI6IjUwMyIsInJlZ2lzdHJhdGlvbiI6Ik9ELUNYSiIsImF0Y19pZGVudCI6bnVsbCwiaW5ib3VuZF9mYV9mbGlnaHRfaWQiOiJNRUE1MDItMTY5NzE4NzA4NC1kbGFkLTFwIiwiY29kZXNoYXJlcyI6W10sImNvZGVzaGFyZXNfaWF0YSI6W10sImJsb2NrZWQiOmZhbHNlLCJkaXZlcnRlZCI6ZmFsc2UsImNhbmNlbGxlZCI6ZmFsc2UsInBvc2l0aW9uX29ubHkiOmZhbHNlLCJvcmlnaW4iOnsiY29kZSI6Ik9UQkQiLCJjb2RlX2ljYW8iOiJPVEJEIiwiY29kZV9pYXRhIjoiRElBIiwiY29kZV9saWQiOm51bGwsInRpbWV6b25lIjoiQXNpYS9RYXRhciIsIm5hbWUiOiLQlNC+0YXQsCIsImNpdHkiOiJEb2hhIiwiYWlycG9ydF9pbmZvX3VybCI6Ii9haXJwb3J0cy9PVEJEIn0sImRlc3RpbmF0aW9uIjp7ImNvZGUiOiJPTEJBIiwiY29kZV9pY2FvIjoiT0xCQSIsImNvZGVfaWF0YSI6IkJFWSIsImNvZGVfbGlkIjpudWxsLCJ0aW1lem9uZSI6IkFzaWEvQmVpcnV0IiwibmFtZSI6IkJlaXJ1dCBBaXIgQmFzZS9SYWZpYyBIYXJpcmkgSW50J2wgKEJlaXJ1dCBJbnQnbCkiLCJjaXR5IjoiQmVpcnV0IiwiYWlycG9ydF9pbmZvX3VybCI6Ii9haXJwb3J0cy9PTEJBIn0sImRlcGFydHVyZV9kZWxheSI6ODExLCJhcnJpdmFsX2RlbGF5IjozMTA0LCJmaWxlZF9ldGUiOjEwMzIwLCJmb3Jlc2lnaHRfcHJlZGljdGlvbnNfYXZhaWxhYmxlIjp0cnVlLCJzY2hlZHVsZWRfb3V0IjoiMjAyMy0xMC0xNVQxNjo1NTowMFoiLCJlc3RpbWF0ZWRfb3V0IjoiMjAyMy0xMC0xNVQxNjo1NTowMFoiLCJhY3R1YWxfb3V0IjoiMjAyMy0xMC0xNVQxNzowODozMVoiLCJzY2hlZHVsZWRfb2ZmIjoiMjAyMy0xMC0xNVQxNzowMDowMFoiLCJlc3RpbWF0ZWRfb2ZmIjoiMjAyMy0xMC0xNVQxNzowODozMVoiLCJhY3R1YWxfb2ZmIjoiMjAyMy0xMC0xNVQxNzowODozMVoiLCJzY2hlZHVsZWRfb24iOiIyMDIzLTEwLTE1VDE5OjUyOjAwWiIsImVzdGltYXRlZF9vbiI6IjIwMjMtMTAtMTVUMjA6NDM6NDRaIiwiYWN0dWFsX29uIjoiMjAyMy0xMC0xNVQyMDo0Mzo0NFoiLCJzY2hlZHVsZWRfaW4iOm51bGwsImVzdGltYXRlZF9pbiI6bnVsbCwiYWN0dWFsX2luIjpudWxsLCJwcm9ncmVzc19wZXJjZW50IjoxMDAsInN0YXR1cyI6ItCf0YDQuNCx0YvQuyIsImFpcmNyYWZ0X3R5cGUiOiJFNTUwIiwicm91dGVfZGlzdGFuY2UiOjExMzIsImZpbGVkX2FpcnNwZWVkIjo0NzQsImZpbGVkX2FsdGl0dWRlIjpudWxsLCJyb3V0ZSI6bnVsbCwiYmFnZ2FnZV9jbGFpbSI6bnVsbCwic2VhdHNfY2FiaW5fYnVzaW5lc3MiOm51bGwsInNlYXRzX2NhYmluX2NvYWNoIjpudWxsLCJzZWF0c19jYWJpbl9maXJzdCI6bnVsbCwiZ2F0ZV9vcmlnaW4iOm51bGwsImdhdGVfZGVzdGluYXRpb24iOm51bGwsInRlcm1pbmFsX29yaWdpbiI6bnVsbCwidGVybWluYWxfZGVzdGluYXRpb24iOm51bGwsInR5cGUiOiJBaXJsaW5lIn1dLCJsaW5rcyI6bnVsbCwibnVtX3BhZ2VzIjoxfQ==
+  recorded_at: Wed, 18 Oct 2023 09:03:35 GMT
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/airports/DIA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 09:03:36 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Fa-User:
+      - mishakulik27
+      X-Fa-Userid:
+      - '15732071'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Varnish:
+      - '3747666470'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Fa-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJhaXJwb3J0X2NvZGUiOiJPVEJEIiwiYWx0ZXJuYXRlX2lkZW50IjoiRElBIiwiY29kZV9pY2FvIjoiT1RCRCIsImNvZGVfaWF0YSI6IkRJQSIsImNvZGVfbGlkIjpudWxsLCJuYW1lIjoi0JTQvtGF0LAiLCJ0eXBlIjoiQWlycG9ydCIsImVsZXZhdGlvbiI6MzUsImNpdHkiOiJEb2hhIiwic3RhdGUiOiIiLCJsb25naXR1ZGUiOjUxLjU2NTA1NiwibGF0aXR1ZGUiOjI1LjI2MTEyNSwidGltZXpvbmUiOiJBc2lhL1FhdGFyIiwiY291bnRyeV9jb2RlIjoiUUEiLCJ3aWtpX3VybCI6Imh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0RvaGFfSW50ZXJuYXRpb25hbF9BaXJwb3J0IiwiYWlycG9ydF9mbGlnaHRzX3VybCI6Ii9haXJwb3J0cy9PVEJEL2ZsaWdodHMiLCJhbHRlcm5hdGl2ZXMiOltdfQ==
+  recorded_at: Wed, 18 Oct 2023 09:03:36 GMT
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/airports/BEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 09:03:37 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Fa-User:
+      - mishakulik27
+      X-Fa-Userid:
+      - '15732071'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Varnish:
+      - '1208479432'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Fa-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJhaXJwb3J0X2NvZGUiOiJPTEJBIiwiYWx0ZXJuYXRlX2lkZW50IjoiQkVZIiwiY29kZV9pY2FvIjoiT0xCQSIsImNvZGVfaWF0YSI6IkJFWSIsImNvZGVfbGlkIjpudWxsLCJuYW1lIjoiQmVpcnV0IEFpciBCYXNlL1JhZmljIEhhcmlyaSBJbnQnbCAoQmVpcnV0IEludCdsKSIsInR5cGUiOiJBaXJwb3J0IiwiZWxldmF0aW9uIjo4NywiY2l0eSI6IkJlaXJ1dCIsInN0YXRlIjoiIiwibG9uZ2l0dWRlIjozNS40ODgzODksImxhdGl0dWRlIjozMy44MjA5MzEsInRpbWV6b25lIjoiQXNpYS9CZWlydXQiLCJjb3VudHJ5X2NvZGUiOiJMQiIsIndpa2lfdXJsIjoiaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQmVpcnV04oCTUmFmaWNfSGFyaXJpX0ludGVybmF0aW9uYWxfQWlycG9ydCIsImFpcnBvcnRfZmxpZ2h0c191cmwiOiIvYWlycG9ydHMvT0xCQS9mbGlnaHRzIiwiYWx0ZXJuYXRpdmVzIjpbXX0=
+  recorded_at: Wed, 18 Oct 2023 09:03:37 GMT
+recorded_with: VCR 6.2.0

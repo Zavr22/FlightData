@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/flights/AA0000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 09:37:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Fa-User:
+      - mishakulik27
+      X-Fa-Userid:
+      - '15732071'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Varnish:
+      - '1208607652'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Fa-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"links":null,"num_pages":1,"flights":[]}'
+  recorded_at: Wed, 18 Oct 2023 09:37:11 GMT
+recorded_with: VCR 6.2.0

@@ -72,7 +72,8 @@ class FlightInfoController < ApplicationController
       return
     end
     flights_info = flight_info_service.get_flights_between_airports(airport_origin.code_iata, airport_destination.code_iata)
-    puts(flights_info)
+    puts flights_info
+    puts(flights_info[:status])
     if flights_info[:status] == "FAIL"
       render json: {
         route: nil,
