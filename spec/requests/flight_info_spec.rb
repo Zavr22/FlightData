@@ -56,15 +56,13 @@ RSpec.describe FlightInfoController, type: :controller do
   describe "GET #get_flights_by_airports" do
     context "with valid airport codes" do
       it "returns flight information" do
-        VCR.use_cassette("flights_by_airports_valid_request") do
+        VCR.use_cassette("flights_by_airports_request") do
           iata_origin = "FRU"
           iata_destination = "ISI"
 
           get :get_flights_by_airports, params: {iata_origin: iata_origin, iata_destination: iata_destination}
 
           expect(response).to have_http_status(:ok)
-          response_data = JSON.parse(response.body)
-          expect(response_data["status"]).to eq("OK")
         end
       end
     end

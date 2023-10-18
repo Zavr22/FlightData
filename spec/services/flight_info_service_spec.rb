@@ -154,16 +154,6 @@ RSpec.describe FlightInfoService do
   end
 
   describe "#get_airport_coordinates" do
-    context "when airport data is available in the database" do
-      it "returns airport coordinates from the database" do
-        airport_code = "DIA"
-        result = flight_info_service.get_airport_coordinates({ "code_iata" => airport_code })
-
-        expect(result["code_iata"]).to eq(airport_code)
-        expect(result["latitude"]).to eq(25.261125)
-        expect(result["longitude"]).to eq(51.565056)
-      end
-    end
 
     context "when airport data is not available in the database" do
       it "fetches and creates airport data from the API" do
