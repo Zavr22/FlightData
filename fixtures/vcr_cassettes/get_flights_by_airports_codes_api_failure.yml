@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/airports/DIA/flights/to/BEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 11:33:35 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Fa-User:
+      - mishakulik27
+      X-Fa-Userid:
+      - '15732071'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Varnish:
+      - '1209126927'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Fa-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmbGlnaHRzIjpbeyJzZWdtZW50cyI6W3siaWRlbnQiOiJNRUE1MDMiLCJpZGVudF9pY2FvIjoiTUVBNTAzIiwiaWRlbnRfaWF0YSI6Ik1FNTAzIiwiZmFfZmxpZ2h0X2lkIjoiTUVBNTAzLTE2OTczNjcwNDEtZGxhZC0xNTUzcCIsIm9wZXJhdG9yIjoiTUVBIiwib3BlcmF0b3JfaWNhbyI6Ik1FQSIsIm9wZXJhdG9yX2lhdGEiOiJNRSIsImZsaWdodF9udW1iZXIiOiI1MDMiLCJyZWdpc3RyYXRpb24iOiJPRC1DWEoiLCJhdGNfaWRlbnQiOm51bGwsImluYm91bmRfZmFfZmxpZ2h0X2lkIjoiTUVBNTAyLTE2OTcxODcwODQtZGxhZC0xcCIsImNvZGVzaGFyZXMiOltdLCJjb2Rlc2hhcmVzX2lhdGEiOltdLCJibG9ja2VkIjpmYWxzZSwiZGl2ZXJ0ZWQiOmZhbHNlLCJjYW5jZWxsZWQiOmZhbHNlLCJwb3NpdGlvbl9vbmx5IjpmYWxzZSwib3JpZ2luIjp7ImNvZGUiOiJPVEJEIiwiY29kZV9pY2FvIjoiT1RCRCIsImNvZGVfaWF0YSI6IkRJQSIsImNvZGVfbGlkIjpudWxsLCJ0aW1lem9uZSI6IkFzaWEvUWF0YXIiLCJuYW1lIjoi0JTQvtGF0LAiLCJjaXR5IjoiRG9oYSIsImFpcnBvcnRfaW5mb191cmwiOiIvYWlycG9ydHMvT1RCRCJ9LCJkZXN0aW5hdGlvbiI6eyJjb2RlIjoiT0xCQSIsImNvZGVfaWNhbyI6Ik9MQkEiLCJjb2RlX2lhdGEiOiJCRVkiLCJjb2RlX2xpZCI6bnVsbCwidGltZXpvbmUiOiJBc2lhL0JlaXJ1dCIsIm5hbWUiOiJCZWlydXQgQWlyIEJhc2UvUmFmaWMgSGFyaXJpIEludCdsIChCZWlydXQgSW50J2wpIiwiY2l0eSI6IkJlaXJ1dCIsImFpcnBvcnRfaW5mb191cmwiOiIvYWlycG9ydHMvT0xCQSJ9LCJkZXBhcnR1cmVfZGVsYXkiOjAsImFycml2YWxfZGVsYXkiOjMxMDQsImZpbGVkX2V0ZSI6MTAzMjAsInNjaGVkdWxlZF9vdXQiOiIyMDIzLTEwLTE1VDE2OjU1OjAwWiIsImVzdGltYXRlZF9vdXQiOiIyMDIzLTEwLTE1VDE2OjU1OjAwWiIsImFjdHVhbF9vdXQiOm51bGwsInNjaGVkdWxlZF9vZmYiOiIyMDIzLTEwLTE1VDE3OjAwOjAwWiIsImVzdGltYXRlZF9vZmYiOiIyMDIzLTEwLTE1VDE3OjA4OjMxWiIsImFjdHVhbF9vZmYiOiIyMDIzLTEwLTE1VDE3OjA4OjMxWiIsInNjaGVkdWxlZF9vbiI6IjIwMjMtMTAtMTVUMTk6NTI6MDBaIiwiZXN0aW1hdGVkX29uIjoiMjAyMy0xMC0xNVQyMDo0Mzo0NFoiLCJhY3R1YWxfb24iOiIyMDIzLTEwLTE1VDIwOjQzOjQ0WiIsInNjaGVkdWxlZF9pbiI6bnVsbCwiZXN0aW1hdGVkX2luIjpudWxsLCJhY3R1YWxfaW4iOm51bGwsInByb2dyZXNzX3BlcmNlbnQiOjEwMCwic3RhdHVzIjoi0J/RgNC40LHRi9C7IiwiYWlyY3JhZnRfdHlwZSI6IkU1NTAiLCJyb3V0ZV9kaXN0YW5jZSI6MTEzMiwiZmlsZWRfYWlyc3BlZWQiOjQ3NCwiZmlsZWRfYWx0aXR1ZGUiOm51bGwsInJvdXRlIjpudWxsLCJiYWdnYWdlX2NsYWltIjpudWxsLCJzZWF0c19jYWJpbl9idXNpbmVzcyI6bnVsbCwic2VhdHNfY2FiaW5fY29hY2giOm51bGwsInNlYXRzX2NhYmluX2ZpcnN0IjpudWxsLCJnYXRlX29yaWdpbiI6bnVsbCwiZ2F0ZV9kZXN0aW5hdGlvbiI6bnVsbCwidGVybWluYWxfb3JpZ2luIjpudWxsLCJ0ZXJtaW5hbF9kZXN0aW5hdGlvbiI6bnVsbCwidHlwZSI6IkFpcmxpbmUifV19XSwibGlua3MiOm51bGwsIm51bV9wYWdlcyI6MX0=
+  recorded_at: Wed, 18 Oct 2023 11:33:35 GMT
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/airports/DIA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 11:33:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n        {\"title\": \"Rate limit error\", \"reason\": \"RATE_LIMIT_ERROR\",
+        \"detail\": \"User has reached quota limit\", \"status\": 429}\n    "
+  recorded_at: Wed, 18 Oct 2023 11:33:36 GMT
+- request:
+    method: get
+    uri: https://aeroapi.flightaware.com/aeroapi/airports/BEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - UEOXOCTfyoOcuA7ZocApRaZnGAVR40G3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Date:
+      - Wed, 18 Oct 2023 11:33:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n        {\"title\": \"Rate limit error\", \"reason\": \"RATE_LIMIT_ERROR\",
+        \"detail\": \"User has reached quota limit\", \"status\": 429}\n    "
+  recorded_at: Wed, 18 Oct 2023 11:33:37 GMT
+recorded_with: VCR 6.2.0

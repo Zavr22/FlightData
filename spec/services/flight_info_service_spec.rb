@@ -1,4 +1,11 @@
 require "rails_helper"
+require "vcr"
+require 'webmock/rspec'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  config.hook_into :webmock
+end
 
 RSpec.describe FlightInfoService do
   let(:api_key) {ENV["FLIGHT_AWARE_API_KEY"]}
@@ -214,14 +221,17 @@ RSpec.describe FlightInfoService do
       expect(result).to be_an(Airport)
     end
   end
+  let(:api_key) { ENV["FLIGHT_AWARE_API_KEY"] }
+  let(:flight_info_service) { FlightInfoService.new(api_key) }
+
   describe "#get_flights_between_airports" do
     context "when flights are available in the database" do
       it "returns flights between two airports" do
-
-        result = flight_info_service.get_flights_between_airports("DIA", "BEY")
-
-        expect(result).to be_an(Array)
-        expect(result).not_to be_empty
+        VCR.use_cassette("get_flights_between_airports_db") do
+          result = flight_info_service.get_flights_between_airports("DIA", "BEY")
+          expect(result).to be_an(Array)
+          expect(result).not_to be_empty
+        end
       end
     end
   end
@@ -229,14 +239,12 @@ RSpec.describe FlightInfoService do
   describe "#get_flights_by_airports_codes" do
     context "when flights are available in the API response" do
       it "returns flights between two airports" do
-        iata_origin = "DIA"
-        iata_destination = "BEY"
-        response_data = {"flights" => [{ "ident" => "AA123", "route_distance" => 100.0}]}
-        allow(HTTParty).to receive(:get).and_return(double(success?: true, body: JSON.dump(response_data)))
-
-        result = flight_info_service.get_flights_by_airports_codes(iata_origin, iata_destination)
-
-        expect(result).to be_an(Array)
+        VCR.use_cassette("get_flights_by_airports_codes_api") do
+          iata_origin = "DIA"
+          iata_destination = "BEY"
+          result = flight_info_service.get_flights_by_airports_codes(iata_origin, iata_destination)
+          expect(result).to be_an(Array)
+        end
       end
     end
 
